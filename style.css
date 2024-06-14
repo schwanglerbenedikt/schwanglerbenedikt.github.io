@@ -34,12 +34,15 @@ nav ul li {
 
 /* Hero-Bereich */
 #hero {
-    background-image: url("hero-image.jpg"); /* Ersetze durch dein Bild */
+    background-image: url("business_background_banner_website.jpg");
     background-size: cover;
     background-position: center;
     color: white;
     padding: 5rem 0;
     text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #hero h2 {
@@ -55,8 +58,11 @@ nav ul li {
 }
 
 /* Weitere Abschnitte */
-#about, #services, #trainings, #contact {
-    padding: 3rem 0;
+#about,
+#services,
+#trainings,
+#contact {
+    padding: 1.5rem 0;
 }
 
 /* Footer */
@@ -68,7 +74,8 @@ footer {
 }
 
 #backToTopBtn {
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -81,8 +88,46 @@ footer {
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 4px;
-  }
-  
-  #backToTopBtn:hover {
+}
+
+#backToTopBtn:hover {
     background-color: #0056b3;
-  }
+}
+
+#contact h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+    width: 75%;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    /* Buttonfarbe */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+    /* Hover-Effekt */
+}

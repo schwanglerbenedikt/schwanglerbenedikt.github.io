@@ -4,19 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Dein Firmenname] - IT-Beratung und Schulung</title>
+    <title>Schwangler-IT - IT-Beratung und Schulung</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header id="head">
         <div class="container">
-            <a href="#" id="logo">[Dein Logo]</a>
-            <h1>[Dein Firmenname]</h1>
+            <embed src="logo.drawio.svg" alt="Schwangler-IT" style="width: 20rem; margin-bottom: 1rem;"/>
             <nav>
                 <ul>
                     <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#about">Über mich</a></li>
                     <li><a href="#services">Leistungen</a></li>
                     <li><a href="#trainings">Schulungen</a></li>
                     <li><a href="#contact">Kontakt</a></li>
@@ -24,27 +23,27 @@
             </nav>
         </div>
     </header>
-
     <section id="hero">
         <div class="container">
             <h2>Ihre persönliche IT-Unterstützung</h2>
-            <p>Wir helfen Ihnen bei der Einrichtung Ihrer Geräte und schulen Sie im Umgang mit PC, IT-Sicherheit und KI.
+            <p>Ich helfe Ihnen bei der Einrichtung Ihrer Geräte und schule Sie im Umgang mit PC, IT-Sicherheit und KI.
             </p>
             <button id="contact-button">Kostenlose Beratung anfordern</button>
         </div>
     </section>
-
     <section id="about">
         <div class="container">
             <h2>Über mich</h2>
-            <p>Ich bin [Dein Name], Ihr persönlicher IT-Experte. Mit meinem Hintergrund in [Dein Studium/Erfahrung] und
-                meiner Leidenschaft für Technologie unterstütze ich Sie dabei, sich im digitalen Alltag zurechtzufinden.
+            <p>Ich bin Benedikt Schwangler, Ihr persönlicher IT-Experte. Mit meiner Leidenschaft für Technologie und meiner Kompetenz aus einem Bachelor in Informatik, sowie Erfahrungen in Softwareentwicklung
+                und persönlicher Kundenberatung unterstütze ich Sie dabei, sich im digitalen Alltag zurechtzufinden.
                 Ich biete Ihnen individuelle Beratung, verständliche Schulungen und geduldige Unterstützung bei allen
                 technischen Fragen.</p>
+<!--
             <blockquote>
                 "Dank [Dein Name] kann ich jetzt endlich mit meinen Enkeln videochatten und meine Lieblingsrezepte
                 online finden. Ich bin so froh, dass ich mich für seine Hilfe entschieden habe!" – Maria S.
             </blockquote>
+-->
         </div>
     </section>
 
@@ -54,7 +53,7 @@
             <ul>
                 <li>
                     <h3>Geräteeinrichtung</h3>
-                    <p>Ich richte Ihren neuen PC, Laptop, Smartphone oder Tablet ein und passe es an Ihre Bedürfnisse
+                    <p>Ich richte Ihre neues Gerät (PC, Laptop, Smartphone, Tablet, TV,...) ein und passe es an Ihre Bedürfnisse
                         an. Ob Installation von Software, Einrichtung von E-Mail-Konten oder Datensicherung – ich
                         kümmere mich darum.</p>
                 </li>
@@ -90,7 +89,6 @@
                         Technologie.</p>
                 </li>
             </ul>
-            <button>Jetzt für eine Schulung anmelden</button>
         </div>
     </section>
 
@@ -99,30 +97,28 @@
         <div class="container">
             <h2>Kontakt</h2>
             <form action="https://formspree.io/f/xvoejygr" method="POST">
-                <div>
-                    <label>
-                        Your email:
-                        <input type="email" name="email">
-                    </label>
+                <div class="form-group">
+                    <label for="email">Ihre E-Mail-Adresse:</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
-                <div>
-                    <label>
-                        Your message:
-                        <textarea name="message"></textarea>
-                    </label>
+    
+                <div class="form-group">
+                    <label for="message">Womit benötigen Sie Hilfe? Ich melde mich baldmöglichst bei Ihnen.</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
+    
+                <button type="submit">Senden</button>
             </form>
         </div>
     </section>
+    
 
     <footer>
         <div class="container">
-            <p>&copy; [Jahr] [Dein Firmenname] | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+            <p>&copy; 2024 Schwangler-IT | <a href="impressum.html">Impressum</a> | <a href="#">Datenschutz</a></p>
         </div>
     </footer>
-    <button id="backToTopBtn">&#8593; Back to Top</button>
+    <button id="backToTopBtn">&#8593; Nach oben</button>
     <script src="script.js"></script>
 </body>
 
